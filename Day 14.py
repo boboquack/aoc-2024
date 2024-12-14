@@ -46,7 +46,7 @@ for t in range(w*h):
         c+=all(not g[(oy+dx)%h][(ox+dy)%w] for dx,dy in off)
     u[t]=c
 z=min(u)
-a=[i for i in range(w*h) if u[i]==128]
+a=[i for i in range(w*h) if u[i]==z]
 for t in a:
     g=[[False]*w for i in range(h)]
     c=0
